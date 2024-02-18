@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+
+  <body>
+    <form onsubmit="handleSubmit(event)">
+      <div class="container">
+        <div class="image"><input required type="image" src="./asisstant/image/LOGO.jpg" id="img" /><br /></div>
+        <div class="NameFL">
+          <div class="row">
+            <div class="name">
+              <label for="fname">First Name</label>
+            </div>
+            <div class="fname">
+              <input required type="text" id="fname" name="firstname" placeholder="Your name.." />
+            </div>
+          </div>
+          <div class="row">
+            <div class="name">
+              <label for="lname">Last Name</label>
+            </div>
+            <div class="lname">
+              <input required type="text" id="lname" name="lastname" placeholder="Your last name.." />
+            </div>
+          </div>
+        </div>
+
+        <div class="gmail">
+          <div class="email">
+            <label for="email">Email</label>
+            <input required type="email" name="email" id="email" placeholder="...@gmail.com" />
+          </div>
+          <div class="NameFL">
+            <div class="tel">
+              <label for="tel">Telephone Number</label>
+              <input required type="tel" name="tel" id="tel" placeholder="Telephone..." />
+            </div>
+            <div class="password">
+              <label for="Pword">Password</label>
+              <input required type="password" name="Pword" id="Pword" placeholder="Password..." />
+            </div>
+          </div>
+        </div>
+        <div class="CHbox">
+          <input required type="checkbox" name="Chbox" id="Chbox" value="buyruq" />
+          <label for="Chbox">Qabul qilish</label>
+        </div>
+
+        <div class="data">
+          <select id="country" name="country">
+            <option value="Mex">Mexico</option>
+            <option value="Aus">Australia</option>
+            <option value="Ca">Canada</option>
+            <option value="UZB">Uzbekistan</option>
+          </select>
+          <div class="datetime">
+            <label for="date">Date</label>
+            <input required type="date" name="date" id="date" lang="en" />
+          </div>
+        </div>
+
+        <div class="gender">
+          <h3>What is your gender?</h3>
+          <input required type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label><br />
+          <input required type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label><br />
+        </div>
+
+        <!-- <div class="search">
+          <label for="serach"></label>
+          <input required required type="search" name="search" id="search" placeholder="Search..." />
+        </div> -->
+        <div class="Manzil">
+          <div class="url">
+            <label for="url"> Manzil <input required type="url" name="url" id="url" placeholder="https://" /> </label>
+          </div>
+          <div class="file">
+            <label for="file">Send File:<input required type="file" name="file" id="file" /></label>
+          </div>
+        </div>
+        <!-- <div class="tugma">
+          <input required type="button" name="btn" id="btn" value="Button" />
+
+          <input required type="button" onclick="onSubmit()" name="btn" id="btn" value="Button" />
+
+          <input required type="reset" value="Reset" id="reset" />
+        </div> -->
+        <br />
+        <!-- <input required type="button" name="btn" id="btn" value="Button" /> -->
+
+        <button id="btn">submit</button>
+      </div>
+    </form>
+    <script src="./Javascript/Script.js"></script>
+  </body>
+</html>
